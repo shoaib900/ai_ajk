@@ -3,12 +3,10 @@
 
 # print("hello world")
 # print("this is in comments")
-
-"""
-print(12)
-print(11)
-"""
-
+# """
+# print(12)
+# print(11)
+# """
 # hello
 # world
 # march
@@ -203,7 +201,11 @@ print(11)
 # 15 lists
 
 
-ls = [1,2,3,4,5]
+# ls = [1,2,3,4,5]
+
+# 16 add lists and change
+# 17 lists slices
+# 18 delete/remove from lists element/s
 
 # ls = ["j","L"] + ls + ["K"]
 # ls.append("K")
@@ -217,17 +219,117 @@ ls = [1,2,3,4,5]
 
 # ls.remove(3)
 
-slc = ls[2:]
-print(slc)
+# slc = ls[2:]
+# print(slc)
+
+
+# //////////////////////////////////////////
+# 19  for loop , while loop 
+
+# ls = [1,2,3,4]
+# print(ls)
+
+# for y in ls:
+#     print(y)
+
+# x = 1
+# while(x <= len(ls)):
+#     print(x)
+#     x +=1
+
+# for x in range(3,31,3):
+#     print(x)
+
+# ls = ["islamabad","jaranwala"]
+# city = input("Enter your city: ")
+
+# if city in ls:
+#     print("your city is cleanest: ")
+# else:
+#     print("dirty city")
 
 
 
+# 20 iterator and iterables in python
+
+# ls = [1,2,3,4]
+# ls1 = iter(ls)
+
+# print(next(ls1))
+# print(next(ls1))
+# print(next(ls1))
+# print(next(ls1))
+
+# 21 tuples
+# tup = ("hello","world")
+# x = list(tup)
+# x.insert( 1,"!")
+# x.remove("hello")
+# del x[0]
+# x.pop(0)
+# y = tuple(x)
+# print(type(x))
+# print(tup, x,y)
+
+# 22 loop in tuple 
+
+
+# tup = (1,2,3,4)
+# for x in tup:
+#   print(x)
+
+# tup = ("hello world",)
+# print(type(tup))
+
+# firstname = ["aslam","ali"]
+# lastname = ["ali","khan"]
+# fullname=[]
+
+# for i in firstname:
+#     for j in lastname:
+#         fullname.append( i + " " + j)
+# del fullname[-1]
+# print(fullname)
+
+# 23 enumerate
+# tup = ["hello","world"]
+# en = enumerate(tup)
+# print(en)
+
+# 24 break contineu pass if statements 
+
+# a = 20 
+# b =10
+
+# for x in range(0,15):
+#     if x == 5:
+#         # break
+#         continue
+#     print(x)
+
+# 25 conditional expression / ternery opertation 
+# a = 70
+
+# if a ==10:
+#     print("yes")
+# else:
+#     print("no")
+
+# print("A+") if (a >=90 and a <= 100) else print("B+") if ( a >= 80 and a <=89) else print("failed")
 
 
 
+# 23  list comprehension 
 
+# ls = ["apple","banana","mango","orange"]
+# lsnew=[]
 
-# 16 add lists and change
-# 17 lists slices
-# 18 delete/remove from lists element/s
+# for x in ls:
+#     if "o" in x:
+#         lsnew.append(x)
+#         print(x)
+
+ls = ["apple","banana","mango","orange"]
+lsnew = [ x for x in ls if "o" in x ]
+print(lsnew)
 
